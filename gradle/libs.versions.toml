@@ -16,6 +16,7 @@ androidx-test-ext-junit = "1.1.5"
 espresso-core = "3.5.1"
 retrofit = "2.9.0"
 okHttpLogging = "4.10.0"
+paging = "1.0.0-alpha18"
 
 [libraries]
 coreKtx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -38,6 +39,7 @@ espresso-core = { group = "androidx.test.espresso", name = "espresso-core", vers
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 retrofitGson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
 okHttpLogging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okHttpLogging"}
+paging = { group = "androidx.paging", name = "paging-compose", version.ref = "paging" }
 
 
 [plugins]

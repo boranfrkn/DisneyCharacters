@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "boranfrkn.disneycharacters.data"
+    namespace = "boranfrkn.disneycharacters.core"
     compileSdk = 33
 
     defaultConfig {
@@ -35,16 +35,6 @@ android {
 }
 
 dependencies {
-
-    implementation(libs.coreKtx)
-    implementation(libs.appcompat)
-    implementation(libs.material)
-    implementation(libs.retrofit)
-    implementation(libs.retrofitGson)
-    implementation(libs.okHttpLogging)
-    implementation(libs.paging)
     implementation(libs.hiltAndroid)
     kapt(libs.hiltCompiler)
-
-    implementation(projects.core)
 }
