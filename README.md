@@ -2,7 +2,8 @@
 
 An example app showcasing the usage of Jetpack Compose, Clean Architecture, MVVM, Coroutines, Flow, and Hilt for dependency injection. The app displays a list of Disney characters retrieved from an API and provides detailed information for each character.
 
-
+You can install [Android Studio Giraffe](https://developer.android.com/studio/preview) to be able to build the project.
+    
 <p align="center">
 <img src="https://developer.android.com/static/topic/modularization/images/1_sample_dep_graph.png" />
 </p>
