@@ -17,6 +17,7 @@ espresso-core = "3.5.1"
 retrofit = "2.9.0"
 okHttpLogging = "4.10.0"
 paging = "1.0.0-alpha18"
+coil = "2.3.0"
 
 [libraries]
 coreKtx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -40,6 +41,7 @@ retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = 
 retrofitGson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
 okHttpLogging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okHttpLogging"}
 paging = { group = "androidx.paging", name = "paging-compose", version.ref = "paging" }
+coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
 
 
 [plugins]

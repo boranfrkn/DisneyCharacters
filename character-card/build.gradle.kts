@@ -24,8 +24,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     buildFeatures {
         compose = true
@@ -34,7 +34,7 @@ android {
         kotlinCompilerExtensionVersion = "1.4.4"
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = JavaVersion.VERSION_17.toString()
     }
 }
 
@@ -49,5 +49,6 @@ dependencies {
     implementation(libs.uiGraphics)
     implementation(libs.uiToolingPreview)
     implementation(libs.material3)
+    implementation(libs.coil)
     debugImplementation(libs.uiTooling)
 }

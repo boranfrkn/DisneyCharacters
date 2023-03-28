@@ -26,11 +26,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = JavaVersion.VERSION_17.toString()
     }
     buildFeatures {
         compose = true
@@ -49,6 +49,7 @@ dependencies {
     implementation(libs.uiGraphics)
     implementation(libs.uiToolingPreview)
     implementation(libs.material3)
+    implementation(libs.paging)
     implementation(libs.hiltAndroid)
     kapt(libs.hiltCompiler)
     androidTestImplementation(platform(libs.composeBom))
@@ -57,4 +58,5 @@ dependencies {
 
     implementation(projects.characterCard)
     implementation(projects.theme)
+    implementation(projects.data)
 }
