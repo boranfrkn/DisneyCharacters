@@ -14,6 +14,8 @@ hilt = "2.45"
 junit = "4.13.2"
 androidx-test-ext-junit = "1.1.5"
 espresso-core = "3.5.1"
+retrofit = "2.9.0"
+okHttpLogging = "4.10.0"
 
 [libraries]
 coreKtx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -33,6 +35,9 @@ hiltCompiler = { group = "com.google.dagger", name = "hilt-compiler", version.re
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofitGson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+okHttpLogging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okHttpLogging"}
 
 
 [plugins]
