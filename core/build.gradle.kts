@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.comAndroidLibrary)
+    id("kotlin-android-library-convention")
     alias(libs.plugins.kotlinAndorid)
     alias(libs.plugins.kapt)
     alias(libs.plugins.hilt)
