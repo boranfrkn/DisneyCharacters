@@ -1,6 +1,7 @@
 [versions]
 comAndroidApplication = "7.4.0"
 kotlinAndroid = "1.8.10"
+kotlin = "1.9.0"
 coreKtx = "1.10.1"
 lifecycleRuntimeKtx = "2.6.1"
 activityCompose = "1.7.2"
@@ -42,7 +43,8 @@ retrofitGson = { group = "com.squareup.retrofit2", name = "converter-gson", vers
 okHttpLogging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okHttpLogging"}
 paging = { group = "androidx.paging", name = "paging-compose", version.ref = "paging" }
 coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
-
+gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "comAndroidLibrary" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "comAndroidApplication" }
