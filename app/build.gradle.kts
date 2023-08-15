@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace = "boranfrkn.disneycharacters"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "boranfrkn.disneycharacters"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -37,11 +37,6 @@ android {
     }
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_17.toString()
-    }
-    packagingOptions {
-        resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
-        }
     }
     kapt {
         correctErrorTypes = true
