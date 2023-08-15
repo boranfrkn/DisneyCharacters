@@ -1,15 +1,12 @@
 plugins {
-    alias(libs.plugins.comAndroidLibrary)
+    id("kotlin-android-library-convention")
     alias(libs.plugins.kotlinAndorid)
 }
 
 android {
     namespace = "boranfrkn.disneycharacters.charactercard"
-    compileSdk = 33
 
     defaultConfig {
-        minSdk = 24
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }

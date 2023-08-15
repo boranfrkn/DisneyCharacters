@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.comAndroidLibrary)
+    id("kotlin-android-library-convention")
     alias(libs.plugins.kotlinAndorid)
     alias(libs.plugins.kapt)
     alias(libs.plugins.hilt)
@@ -7,11 +7,8 @@ plugins {
 
 android {
     namespace = "boranfrkn.disneycharacters.data"
-    compileSdk = 33
 
     defaultConfig {
-        minSdk = 24
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }

@@ -1,15 +1,10 @@
 plugins {
-    alias(libs.plugins.comAndroidLibrary)
+    id("kotlin-android-library-convention")
     alias(libs.plugins.kotlinAndorid)
 }
 
 android {
     namespace = "boranfrkn.disneycharacters.theme"
-    compileSdk = 33
-
-    defaultConfig {
-        minSdk = 24
-    }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -31,5 +26,5 @@ dependencies {
     implementation(libs.coreKtx)
     implementation(libs.appcompat)
     implementation(libs.material3)
-    implementation(libs.composeBom)
+    implementation(platform(libs.composeBom))
 }
