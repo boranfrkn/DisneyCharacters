@@ -1,5 +1,6 @@
 plugins {
     id("library-convention")
+    id("compose-convention")
     alias(libs.plugins.kotlinAndorid)
 }
 
@@ -20,32 +21,10 @@ android {
             )
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
-    }
-    buildFeatures {
-        compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.4"
-    }
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17.toString()
-    }
 }
 
 dependencies {
-
     implementation(libs.coreKtx)
     implementation(libs.appcompat)
-    implementation(libs.material)
-    implementation(libs.activityCompose)
-    implementation(platform(libs.composeBom))
-    implementation(libs.ui)
-    implementation(libs.uiGraphics)
-    implementation(libs.uiToolingPreview)
-    implementation(libs.material3)
     implementation(libs.coil)
-    debugImplementation(libs.uiTooling)
 }
