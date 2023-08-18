@@ -24,8 +24,8 @@ class CharacterPagingDataSource @Inject constructor(
             LoadResult.Page(
                 data = characterResponse.data ?: listOf(),
                 prevKey = if (nextPage == 1) null else nextPage - 1 ,
-                nextKey = if (nextPage < (characterResponse.totalPages ?: 1))
-                    characterResponse.nextPage?.last()?.code else null
+                nextKey = if (nextPage < (characterResponse.pagingInfoResponse?.totalPages ?: 1))
+                    nextPage.plus(1) else null
             )
         }catch (e: Exception){
             LoadResult.Error(e)
