@@ -1,10 +1,11 @@
-import com.furkanboran.build_logic.libs
+import com.furkanboran.build_logic.addImplementation
+import com.furkanboran.build_logic.addKaptImplementation
 
 plugins {
     kotlin("kapt")
 }
 
 dependencies {
-    add("implementation", libs.findLibrary("hiltAndroid").get())
-    add("kapt", libs.findLibrary("hiltCompiler").get())
+    addImplementation("hiltAndroid")
+    addKaptImplementation("hiltCompiler")
 }

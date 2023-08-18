@@ -1,4 +1,6 @@
-import com.furkanboran.build_logic.libs
+import com.furkanboran.build_logic.addDebugImplementation
+import com.furkanboran.build_logic.addImplementation
+import com.furkanboran.build_logic.addPlatformImplementation
 
 plugins {
     id("library-convention")
@@ -17,10 +19,10 @@ android {
 }
 
 dependencies {
-    add("implementation", platform(libs.findLibrary("composeBom").get()))
-    add("implementation", libs.findLibrary("ui").get())
-    add("implementation", libs.findLibrary("uiGraphics").get())
-    add("implementation", libs.findLibrary("uiToolingPreview").get())
-    add("implementation", libs.findLibrary("material3").get())
-    add("debugImplementation", libs.findLibrary("uiTooling").get())
+    addPlatformImplementation("composeBom")
+    addImplementation("ui")
+    addImplementation("uiGraphics")
+    addImplementation("uiToolingPreview")
+    addImplementation("material3")
+    addDebugImplementation("uiTooling")
 }
