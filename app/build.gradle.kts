@@ -1,8 +1,8 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndorid)
-    alias(libs.plugins.kapt)
     alias(libs.plugins.hilt)
+    id("hilt-convention")
 }
 
 android {
@@ -38,14 +38,8 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_17.toString()
     }
-    kapt {
-        correctErrorTypes = true
-    }
 }
 
 dependencies {
-    implementation(libs.hiltAndroid)
-    kapt(libs.hiltCompiler)
-
     implementation(projects.characters)
 }

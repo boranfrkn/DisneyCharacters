@@ -1,7 +1,8 @@
 plugins {
     id("library-convention")
+    id("compose-convention")
+    id("hilt-convention")
     alias(libs.plugins.kotlinAndorid)
-    alias(libs.plugins.kapt)
     alias(libs.plugins.hilt)
 }
 
@@ -41,16 +42,7 @@ dependencies {
     implementation(libs.coreKtx)
     implementation(libs.lifecycleRuntimeKtx)
     implementation(libs.activityCompose)
-    implementation(platform(libs.composeBom))
-    implementation(libs.ui)
-    implementation(libs.uiGraphics)
-    implementation(libs.uiToolingPreview)
-    implementation(libs.material3)
     implementation(libs.paging)
-    implementation(libs.hiltAndroid)
-    kapt(libs.hiltCompiler)
-    androidTestImplementation(platform(libs.composeBom))
-    debugImplementation(libs.uiTooling)
     debugImplementation(libs.uiTestManifest)
 
     implementation(projects.characterCard)
